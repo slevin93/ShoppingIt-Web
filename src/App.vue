@@ -21,3 +21,10 @@ export default {
   }
 }
 </script>
+
+<style>
+.v-application a {
+  color: inherit!important;
+  text-decoration: inherit!important;
+}
+</style>
