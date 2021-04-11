@@ -1,4 +1,4 @@
-# src
+# shoppingit-web
 
 ## Project setup
 ```
