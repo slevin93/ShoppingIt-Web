@@ -41,7 +41,7 @@
           <v-card-actions>
             <AddSaleItem @onAddItem="addSaleItem" />
             <v-spacer></v-spacer>
-            <v-btn color="primary" @click="completeSale()">Add</v-btn>
+            <v-btn color="primary" @click="completeSale()">Complete</v-btn>
           </v-card-actions>
         </v-card>
       </v-col>
