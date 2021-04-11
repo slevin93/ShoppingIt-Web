@@ -1,5 +1,7 @@
 # shoppingit-web
 
+Api: https://github.com/slevin93/ShoppingIt
+
 ## Project setup
 ```
 npm install
