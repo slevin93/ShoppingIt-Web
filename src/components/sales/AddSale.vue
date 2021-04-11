@@ -2,7 +2,7 @@
 <div>
     <v-row>
       <v-col cols="12">
-        <router-link :to="{ name: 'Order' }">
+        <router-link :to="{ name: 'Sales' }">
           <v-btn
             text
             color="primary"
