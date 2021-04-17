@@ -14,7 +14,11 @@ export default {
       return null
     }
 
-    return VueJwtDecode.decode(token)[key]
+    try {
+      return VueJwtDecode.decode(token)[key]
+    } catch {
+      return null
+    }
   },
   getEmail () {
     return this.getTokenKey('http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name')
