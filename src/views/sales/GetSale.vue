@@ -1,19 +1,16 @@
 <template>
   <div>
-    {{ saleId }}
+    <EditSale :sale-id="this.$route.params.saleId" />
   </div>
 </template>
 
 <script>
+import EditSale from '@/components/sales/EditSale'
+
 export default {
   name: 'GetSale',
-  data () {
-    return {
-      saleId: 0
-    }
-  },
-  mounted () {
-    this.saleId = this.$route.params.saleId
+  components: {
+    EditSale
   }
 }
 </script>
