@@ -17,7 +17,7 @@
       </v-toolbar>
     </template>
     <template v-slot:[`item.actions`]="{ item }">
-      <router-link :to="{ name: 'GetOrder', params: { orderId: item.saleId } }">
+      <router-link :to="{ name: 'GetSale', params: { saleId: item.saleId } }">
         <v-icon small class="mr-2"> mdi-pencil </v-icon>
       </router-link>
     </template>

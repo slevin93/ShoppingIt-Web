@@ -27,9 +27,9 @@ const routes = [
     component: () => import('@/views/sales/NewSale')
   },
   {
-    path: '/order/:orderId',
-    name: 'GetOrder',
-    component: () => import('@/views/orders/GetOrder')
+    path: '/sales/:saleId',
+    name: 'GetSale',
+    component: () => import('@/views/sales/GetSale')
   },
   {
     path: '/product',

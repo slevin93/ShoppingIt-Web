@@ -1,23 +1,6 @@
 <template>
 <div>
     <v-row>
-      <v-col cols="12">
-        <router-link :to="{ name: 'Sales' }">
-          <v-btn
-            text
-            color="primary"
-          >
-            <v-icon
-              dark
-              left
-            >
-              mdi-arrow-left
-            </v-icon>Back
-          </v-btn>
-        </router-link>
-      </v-col>
-    </v-row>
-    <v-row>
       <v-col md="6" sm="12">
         <v-card>
           <v-card-title>New Sale</v-card-title>
@@ -116,8 +99,10 @@ export default {
       }
       this.saleItems.push(sale)
     },
-    async completeOrder () {
+    async completeSale () {
       await saleService.addSale(this.accountId, this.paymentTypeId, this.salesStatusId, this.saleItems)
+
+      this.$router.push({ name: 'Sales' })
     },
     deleteItem (productId) {
       this.saleItems = this.saleItems.filter(x => x.productId !== productId)
