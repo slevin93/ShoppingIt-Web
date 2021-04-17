@@ -21,5 +21,9 @@ export default {
   async getSales () {
     return await Vue.prototype.$http
       .get('sales')
+  },
+  async updateSale (saleId, data) {
+    return await Vue.prototype.$http
+      .patch(`sales/${saleId}`, data)
   }
 }
